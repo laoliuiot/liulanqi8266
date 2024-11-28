@@ -1,5 +1,6 @@
 
 //wifi 控制，有个最大的毛病就是 消耗电流大，这个用电池供电的话，需要70ma左右，如果是市电供电无所谓了
+//如果想降低耗电量，可以在loop里面添加delay(1000),耗电量会下降一半多，反应变慢一些而已
 //http://192.168.1.4/?TURN_ON_LED=1
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>  // 引入Web服务器库
